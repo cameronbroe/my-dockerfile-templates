@@ -1,0 +1,13 @@
+name: my-crystal-docker-template
+version: 0.1.0
+
+authors:
+  - Cameron Roe <cameron@cameronbroe.com>
+
+targets:
+  my-crystal-docker-template:
+    main: main.cr
+
+crystal: 1.0.0
+
+license: MIT
