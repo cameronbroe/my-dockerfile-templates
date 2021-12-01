@@ -1,5 +1,5 @@
 # my-dockerfile-templates
-Just my collection of Dockerfile templates for various language environments
+Just my collection of Dockerfile templates for various language environments. There is a particular emphasis in simplicity with these Dockerfiles. They should be able to be copied over to your project with minimal changes needed to get you up and running.
 
 This README assumes you have installed Docker for your platform through their suggested instructions.
 
