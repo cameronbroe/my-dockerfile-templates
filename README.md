@@ -7,6 +7,7 @@ This README assumes you have installed Docker for your platform through their su
 
 * [C](c-cmake/Dockerfile)
 * [C++](cpp-cmake/Dockerfile)
+* [C#/.NET](dotnet/Dockerfile)
 * [Crystal](crystal/Dockerfile)
 * [Go](golang/Dockerfile)
 * [JavaScript](nodejs/Dockerfile)
