@@ -15,6 +15,7 @@ This README assumes you have installed Docker for your platform through their su
 * [Python](python/Dockerfile)
 * [Ruby](ruby/Dockerfile)
 * [Rust](rust/Dockerfile)
+* [Swift](swift/Dockerfile)
 
 # Building images
 
