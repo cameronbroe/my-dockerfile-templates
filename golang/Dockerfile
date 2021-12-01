@@ -6,4 +6,4 @@ RUN go build -o app main.go
 
 FROM scratch
 COPY --from=build /project/app /app
-ENTRYPOINT ["/app"]
+CMD ["/app"]
