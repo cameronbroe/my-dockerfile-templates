@@ -30,4 +30,4 @@ This will build an image with the tag `my-dockerfile-template` and store it in y
 
 Assuming you used the tag name above, you can simply run the following command to run the image that was created:
 
-`docker build -t my-dockerfile-template`
+`docker run --rm -t my-dockerfile-template`
