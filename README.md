@@ -10,6 +10,7 @@ This README assumes you have installed Docker for your platform through their su
 * [C#/.NET](dotnet/Dockerfile)
 * [Crystal](crystal/Dockerfile)
 * [Go](golang/Dockerfile)
+* [Java](java/Dockerfile)
 * [JavaScript](nodejs/Dockerfile)
 * [Python](python/Dockerfile)
 * [Ruby](ruby/Dockerfile)
