@@ -5,7 +5,8 @@ This README assumes you have installed Docker for your platform through their su
 
 # Languages
 
-* [C](cmake/Dockerfile)
+* [C](c-cmake/Dockerfile)
+* [C++](cpp-cmake/Dockerfile)
 * [Crystal](crystal/Dockerfile)
 * [Go](golang/Dockerfile)
 * [JavaScript](nodejs/Dockerfile)
