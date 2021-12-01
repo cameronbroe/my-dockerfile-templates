@@ -3,6 +3,16 @@ Just my collection of Dockerfile templates for various language environments. Th
 
 This README assumes you have installed Docker for your platform through their suggested instructions.
 
+# Languages
+
+* [C](cmake/Dockerfile)
+* [Crystal](crystal/Dockerfile)
+* [Go](golang/Dockerfile)
+* [JavaScript](nodejs/Dockerfile)
+* [Python](python/Dockerfile)
+* [Ruby](ruby/Dockerfile)
+* [Rust](rust/Dockerfile)
+
 # Building images
 
 Each language environment's Dockerfile is in its own directory in this repo. To start working with that environment, you should `cd` into its directory
