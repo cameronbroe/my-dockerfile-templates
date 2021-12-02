@@ -1,4 +1,4 @@
-# my-dockerfile-templates ![](https://github.com/cameronbroe/my-dockerfile-templates/actions/workflows/test.yml/badge.svg?branch=main)
+# my-dockerfile-templates ![](https://github.com/cameronbroe/my-dockerfile-templates/actions/workflows/test.yml/badge.svg?branch=main) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md) 
 Just my collection of Dockerfile templates for various language environments. There is a particular emphasis in simplicity with these Dockerfiles. Each one should be a simple "Hello, world!" for that given language's environment. They should be able to be copied over to your project with minimal changes needed to get you up and running.
 
 This README assumes you have installed Docker for your platform through their suggested instructions.
