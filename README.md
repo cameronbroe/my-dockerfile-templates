@@ -40,3 +40,7 @@ The tests are entirely contained within `run_tests.sh`. As on as Docker is set u
 `./run_tests.sh`
 
 These tests are also ran on PRs to `main` as well as pushes to `main` through GitHub Actions.
+
+# Contributing
+
+I am open to contributions with improvements and new languages/environments. New languages/environments should be automatically tested by `run_tests.sh` and pass in CI before I will merge them in. In general, please strive to keep these templates as simple as possible. However, if the language is one with build artifacts (e.g C++, Rust, Golang), I do think a multi-stage build approach is appropriate. If you are unfamiliar with multi-stage builds, refer to [Docker's documentation](https://docs.docker.com/develop/develop-images/multistage-build/).
