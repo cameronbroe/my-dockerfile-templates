@@ -13,6 +13,7 @@ This README assumes you have installed Docker for your platform through their su
 * [Java](java/Dockerfile)
 * [JavaScript](nodejs/Dockerfile)
 * [Python](python/Dockerfile)
+* [Raku/Perl6](raku/Dockerfile)
 * [Ruby](ruby/Dockerfile)
 * [Rust](rust/Dockerfile)
 * [Swift](swift/Dockerfile)
