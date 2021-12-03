@@ -12,6 +12,7 @@ This README assumes you have installed Docker for your platform through their su
 * [Go](golang/Dockerfile)
 * [Java](java/Dockerfile)
 * [JavaScript](nodejs/Dockerfile)
+* [Julia](julia/Dockerfile)
 * [Python](python/Dockerfile)
 * [Raku/Perl6](raku/Dockerfile)
 * [Ruby](ruby/Dockerfile)
