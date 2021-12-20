@@ -1,4 +1,4 @@
-FROM openjdk:18-slim-bullseye
+FROM openjdk:19-slim-bullseye
 WORKDIR /project
 COPY . .
 RUN javac main.java
