@@ -1,4 +1,4 @@
-FROM ruby:3.1.0-slim
+FROM ruby:3.1.1-slim
 WORKDIR /project
 COPY . .
 RUN bundle install
