@@ -1,4 +1,9 @@
-FROM crystallang/crystal:1.4-dev
+FROM crystallang/crystal:1.4-dev as build
 WORKDIR /project
 COPY . .
-CMD ["crystal", "run", "main.cr"]
+RUN shards build --release --production --static
+RUN strip bin/*
+
+FROM scratch
+COPY --from=build /project/bin/* /
+ENTRYPOINT ["/my-crystal-docker-template"]
