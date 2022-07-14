@@ -1,5 +1,26 @@
 #!/bin/bash
 
+should_ignore=
+check_arch_ignore () {
+	should_ignore=0
+	local environment=$1
+	local arch_ignore="${environment}/.archignore"
+	local current_arch=$(lscpu | grep Architecture | tr -d '[:blank:]' | awk -F: '{ print $2 }')
+	
+	echo "💭  checking if ${environment} should be ignored on ${current_arch}"
+	if [[ -f "${arch_ignore}" ]]; then
+		transformed_file=$(cat ${arch_ignore} | tr '[:blank:]' ' ')
+		arch_count=$(echo $transformed_file | grep -ic ${current_arch})
+		if [[ $arch_count -gt 0 ]]; then
+			echo "🛑  ${current_arch} is ignored for ${environment}"
+			should_ignore=1
+		else
+			echo "🟢  ${current_arch} is not ignored for ${environment}"
+			should_ignore=0
+		fi
+	fi
+}
+
 last_build_hash=
 test_build () {
 	local environment=$1
@@ -21,7 +42,7 @@ test_run () {
 	local environment=$1
 	local image_hash=$2
 
-	echo "⚡  checking run for ${environment}"
+	echo "🚀  checking run for ${environment}"
 	output=$(docker run --rm $image_hash)
 	run_result=$?
 
@@ -43,6 +64,9 @@ test_run () {
 dockerfiles=$(find . -type f -name Dockerfile)
 for file in $dockerfiles; do
 	environment=$(dirname $file | tr -d ./)
-	test_build $environment $file
-	test_run $environment $last_build_hash
+	check_arch_ignore $environment
+	if [[ $should_ignore -ne 1 ]]; then
+		test_build $environment $file
+		test_run $environment $last_build_hash
+	fi
 done
