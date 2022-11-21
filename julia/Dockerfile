@@ -1,4 +1,4 @@
-FROM julia:1.8.2-bullseye
+FROM julia:1.8.3-bullseye
 WORKDIR /project
 COPY . .
 CMD ["julia", "main.jl"]
