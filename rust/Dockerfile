@@ -1,4 +1,4 @@
-FROM rust:1.67.1-slim AS build
+FROM rust:1.68.0-slim AS build
 WORKDIR /project
 COPY . .
 RUN cargo build
