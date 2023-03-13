@@ -1,4 +1,4 @@
-FROM golang:1.20.1 AS build
+FROM golang:1.20.2 AS build
 WORKDIR /project
 COPY . .
 RUN go mod download
