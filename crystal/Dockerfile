@@ -1,4 +1,4 @@
-FROM crystallang/crystal:1.9-dev as build
+FROM crystallang/crystal:1.10-dev as build
 WORKDIR /project
 COPY . .
 RUN shards build --release --production --static
