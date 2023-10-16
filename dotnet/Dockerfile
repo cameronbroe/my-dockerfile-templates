@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0.400 AS build
+FROM mcr.microsoft.com/dotnet/sdk:7.0.402 AS build
 WORKDIR /project
 
 COPY *.csproj .
