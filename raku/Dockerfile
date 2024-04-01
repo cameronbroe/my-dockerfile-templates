@@ -1,4 +1,4 @@
-FROM rakudo-star:2023.08
+FROM rakudo-star:2024.02
 WORKDIR /project
 COPY . .
 CMD ["rakudo", "main.raku"]
