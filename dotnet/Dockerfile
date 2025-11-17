@@ -7,7 +7,7 @@ RUN dotnet restore
 COPY . .
 RUN dotnet publish -c release -o /app --no-restore
 
-FROM mcr.microsoft.com/dotnet/runtime:8.0.6
+FROM mcr.microsoft.com/dotnet/runtime:10.0.0
 WORKDIR /app
 COPY --from=build /app .
 CMD ["dotnet", "app.dll"]
